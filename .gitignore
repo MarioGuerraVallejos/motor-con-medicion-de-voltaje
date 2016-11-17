@@ -35,7 +35,7 @@ void loop() {
       valor_cad=analogRead(3);  
       analogWrite(motor, valor_cad/4);  
       delay(100);        
-      velocidad=map (valor_cad, 0, 103, 0, 99);          
+      velocidad=map (valor_cad, 0, 860, 0, 99);          
        valor_decena=velocidad/10;          
        digitalWrite(unidades,LOW);        
         digitalWrite(decenas,HIGH);         
